@@ -1,13 +1,13 @@
 import React from 'react'
 
 import { NextPage } from 'next'
-import SampleMainContainer from '@/containers/SampleContainer'
 import { Layout } from '@/components/layouts'
+import SampleTemplate from '@/templates/SampleTemplate'
 
 const SamplePage: NextPage = () => {
   return (
     <Layout>
-      <SampleMainContainer />
+      <SampleTemplate />
     </Layout>
   )
 }

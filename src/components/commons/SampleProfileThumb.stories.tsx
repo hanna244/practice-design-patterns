@@ -1,21 +1,25 @@
-import { SampleUserDefaultInfo } from '@/constants'
 import { ComponentMeta, ComponentStory } from '@storybook/react'
-import SampleSaveInput from './SampleSaveInput'
+import SampleProfileThumb from './SampleProfileThumb'
 
 /* CONFIG ------------------------------------------------------------------- */
 
 export default {
-  title: 'Sample / Component / SampleSaveInput',
-  component: SampleSaveInput,
+  title: 'Sample / Component / Commons / SampleProfileThumb',
+  component: SampleProfileThumb,
   // 컴포넌트의 default props를 입력해주세요
   args: {
-    data: SampleUserDefaultInfo,
+    width: 72,
+    height: 72,
+    alt: '프로필',
+    src: 'https://randomuser.me/api/portraits/med/women/61.jpg',
   },
-} as ComponentMeta<typeof SampleSaveInput>
+} as ComponentMeta<typeof SampleProfileThumb>
 
 /* TEMPLATE ----------------------------------------------------------------- */
 
-const Template: ComponentStory<typeof SampleSaveInput> = (args) => <SampleSaveInput {...args} />
+const Template: ComponentStory<typeof SampleProfileThumb> = (args) => (
+  <SampleProfileThumb {...args} />
+)
 
 /* BASE --------------------------------------------------------------------- */
 

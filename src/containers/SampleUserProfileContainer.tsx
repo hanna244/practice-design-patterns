@@ -2,9 +2,10 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 
 import { SampleUserDefaultInfo } from '@/constants'
-import { SamplePresenter } from '@/components/presenters'
 
-const SampleContainer = () => {
+import { SampleUserProfile } from '@/components/presenters'
+
+const SampleUserProfileContainer = () => {
   const [userInfo, setUserInfo] = useState(SampleUserDefaultInfo)
 
   useEffect(() => {
@@ -13,7 +14,7 @@ const SampleContainer = () => {
     })
   }, [])
 
-  return <SamplePresenter data={userInfo} />
+  return <SampleUserProfile data={userInfo} />
 }
 
-export default SampleContainer
+export default SampleUserProfileContainer

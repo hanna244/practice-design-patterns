@@ -1,3 +1,4 @@
-import SamplePresenter from './Sample'
+import SampleUserProfile from './SampleUserProfile'
+import SampleSaveInput from './SampleSaveInput'
 
-export { SamplePresenter }
+export { SampleUserProfile, SampleSaveInput }
