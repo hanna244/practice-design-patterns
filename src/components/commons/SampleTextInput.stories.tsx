@@ -4,7 +4,7 @@ import SampleTextInput from './SampleTextInput'
 /* CONFIG ------------------------------------------------------------------- */
 
 export default {
-  title: 'Sample / Component / SampleTextInput',
+  title: 'Sample / Component / Commons / SampleTextInput',
   component: SampleTextInput,
   // 컴포넌트의 default props를 입력해주세요
   args: {

@@ -1,24 +1,21 @@
 import React from 'react'
 
 import { SampleUserInfoRequestDataType } from '@/types/SampleType'
+import { SampleProfileThumb } from '../commons'
 
-import { SampleSaveInput } from '../groups'
-
-type SamplePresenterProps = {
+type SampleUserProfilePresenterProps = {
   data: SampleUserInfoRequestDataType
 }
 
-const SamplePresenter = ({ data }: SamplePresenterProps) => {
+const SampleUserProfilePresenter = ({ data }: SampleUserProfilePresenterProps) => {
   return (
     <div>
-      <div style={{ width: '72px', height: '72px' }}>
-        <img
-          src={data.results[0].picture.medium}
-          alt={data.results[0].id.name}
-          width={72}
-          height={72}
-        />
-      </div>
+      <SampleProfileThumb
+        width={72}
+        height={72}
+        alt={data.results[0].id.name + '프로필'}
+        src={data.results[0].picture.medium}
+      ></SampleProfileThumb>
       <dl>
         <div style={{ display: 'flex', fontSize: '1.5rem' }}>
           <dt>name:</dt>
@@ -43,9 +40,8 @@ const SamplePresenter = ({ data }: SamplePresenterProps) => {
           <dd style={{ fontWeight: 'bold' }}>{data.results[0].registered.age}</dd>
         </div>
       </dl>
-      <SampleSaveInput id={data.info.seed} label={'자기소개'} />
     </div>
   )
 }
 
-export default SamplePresenter
+export default SampleUserProfilePresenter
