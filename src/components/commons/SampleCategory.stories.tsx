@@ -1,21 +1,18 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react'
-import SampleTextInput from './SampleTextInput'
+import SampleCategory from './SampleCategory'
 
 /* CONFIG ------------------------------------------------------------------- */
 
 export default {
-  title: 'Sample / Component / Commons / SampleTextInput',
-  component: SampleTextInput,
+  title: 'Sample / Component / Commons / SampleCategory',
+  component: SampleCategory,
   // 컴포넌트의 default props를 입력해주세요
-  args: {
-    id: 'Test',
-    label: '테스트 인풋',
-  },
-} as ComponentMeta<typeof SampleTextInput>
+  args: {},
+} as ComponentMeta<typeof SampleCategory>
 
 /* TEMPLATE ----------------------------------------------------------------- */
 
-const Template: ComponentStory<typeof SampleTextInput> = (args) => <SampleTextInput {...args} />
+const Template: ComponentStory<typeof SampleCategory> = (args) => <SampleCategory {...args} />
 
 /* BASE --------------------------------------------------------------------- */
 

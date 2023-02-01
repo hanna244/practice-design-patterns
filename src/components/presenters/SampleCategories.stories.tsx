@@ -1,21 +1,18 @@
-import { SampleUserDefaultInfo } from '@/constants'
 import { ComponentMeta, ComponentStory } from '@storybook/react'
-import SampleSaveInput from './SampleSaveInput'
+import SampleCategories from './SampleCategories'
 
 /* CONFIG ------------------------------------------------------------------- */
 
 export default {
-  title: 'Sample / Component / Presenters / SampleSaveInput',
-  component: SampleSaveInput,
+  title: 'Sample / Component / Presenters / SampleCategories',
+  component: SampleCategories,
   // 컴포넌트의 default props를 입력해주세요
-  args: {
-    data: SampleUserDefaultInfo,
-  },
-} as ComponentMeta<typeof SampleSaveInput>
+  args: {},
+} as ComponentMeta<typeof SampleCategories>
 
 /* TEMPLATE ----------------------------------------------------------------- */
 
-const Template: ComponentStory<typeof SampleSaveInput> = (args) => <SampleSaveInput {...args} />
+const Template: ComponentStory<typeof SampleCategories> = (args) => <SampleCategories {...args} />
 
 /* BASE --------------------------------------------------------------------- */
 

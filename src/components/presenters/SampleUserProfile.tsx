@@ -1,47 +1,50 @@
 import React from 'react'
 
-import { SampleUserInfoRequestDataType } from '@/types/SampleType'
+import * as sampleUserProfileType from '@/types/sampleUserProfileType'
+
 import { SampleProfileThumb } from '../commons'
 
-type SampleUserProfilePresenterProps = {
-  data: SampleUserInfoRequestDataType
+type SampleUserProfileProps = {
+  data: sampleUserProfileType.ResponseDataType['data']
 }
 
-const SampleUserProfilePresenter = ({ data }: SampleUserProfilePresenterProps) => {
+const SampleUserProfile = ({ data }: SampleUserProfileProps) => {
   return (
     <div>
       <SampleProfileThumb
         width={72}
         height={72}
-        alt={data.results[0].id.name + '프로필'}
-        src={data.results[0].picture.medium}
+        alt={data?.username + '프로필'}
+        src={data?.image}
       ></SampleProfileThumb>
       <dl>
         <div style={{ display: 'flex', fontSize: '1.5rem' }}>
-          <dt>name:</dt>
-          <dd style={{ fontWeight: 'bold' }}>
-            {data.results[0].name.last + data.results[0].name.first}
-          </dd>
+          <dt>Name:</dt>
+          <dd style={{ fontWeight: 'bold' }}>{data?.username}</dd>
         </div>
         <div style={{ display: 'flex', fontSize: '1.5rem' }}>
-          <dt>email:</dt>
-          <dd style={{ fontWeight: 'bold' }}>{data.results[0].email}</dd>
+          <dt>Email:</dt>
+          <dd style={{ fontWeight: 'bold' }}>{data?.email}</dd>
         </div>
         <div style={{ display: 'flex', fontSize: '1.5rem' }}>
-          <dt>gender:</dt>
-          <dd style={{ fontWeight: 'bold' }}>{data.results[0].gender}</dd>
+          <dt>Gender:</dt>
+          <dd style={{ fontWeight: 'bold' }}>{data?.gender}</dd>
         </div>
         <div style={{ display: 'flex', fontSize: '1.5rem' }}>
-          <dt>registered date:</dt>
-          <dd style={{ fontWeight: 'bold' }}>{data.results[0].registered.date}</dd>
+          <dt>Birthday</dt>
+          <dd style={{ fontWeight: 'bold' }}>{data?.birthDate}</dd>
         </div>
         <div style={{ display: 'flex', fontSize: '1.5rem' }}>
-          <dt>registered age:</dt>
-          <dd style={{ fontWeight: 'bold' }}>{data.results[0].registered.age}</dd>
+          <dt>Age:</dt>
+          <dd style={{ fontWeight: 'bold' }}>{data?.age}</dd>
+        </div>
+        <div style={{ display: 'flex', fontSize: '1.5rem' }}>
+          <dt>Phone:</dt>
+          <dd style={{ fontWeight: 'bold' }}>{data?.phone}</dd>
         </div>
       </dl>
     </div>
   )
 }
 
-export default SampleUserProfilePresenter
+export default SampleUserProfile

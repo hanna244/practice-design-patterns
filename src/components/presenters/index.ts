@@ -1,4 +1,4 @@
 import SampleUserProfile from './SampleUserProfile'
-import SampleSaveInput from './SampleSaveInput'
+import SampleUseCategory from './SampleCategories'
 
-export { SampleUserProfile, SampleSaveInput }
+export { SampleUserProfile, SampleUseCategory }

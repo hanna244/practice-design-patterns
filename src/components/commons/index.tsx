@@ -1,5 +1,5 @@
 import SampleButton from './SampleButton'
-import SampleTextInput from './SampleTextInput'
 import SampleProfileThumb from './SampleProfileThumb'
+import SampleCategory from './SampleCategory'
 
-export { SampleButton, SampleTextInput, SampleProfileThumb }
+export { SampleButton, SampleProfileThumb, SampleCategory }
