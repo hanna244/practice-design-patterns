@@ -1,20 +1,25 @@
-import React, { useEffect, useState } from 'react'
-import axios from 'axios'
-
-import { SampleUserDefaultInfo } from '@/constants'
+import React from 'react'
 
 import { SampleUserProfile } from '@/components/presenters'
+import { useQuery } from 'react-query'
+import SampleUserService from '@/services/SampleUserService'
 
 const SampleUserProfileContainer = () => {
-  const [userInfo, setUserInfo] = useState(SampleUserDefaultInfo)
+  const { isLoading, data } = useQuery('userInfoProfileData', () => {
+    const params = {
+      id: 1,
+    }
 
-  useEffect(() => {
-    axios.get('https://randomuser.me/api/').then((res) => {
-      setUserInfo(res.data)
-    })
-  }, [])
+    return SampleUserService.profile(params)
+  })
 
-  return <SampleUserProfile data={userInfo} />
+  if (isLoading) return <p>Loading...</p>
+
+  return (
+    <div>
+      <SampleUserProfile data={data?.data} />
+    </div>
+  )
 }
 
 export default SampleUserProfileContainer

@@ -1,10 +1,12 @@
-import SampleContainer from '@/containers/SampleUserProfileContainer'
 import React from 'react'
+
+import { SampleProductsCategoryContainer, SampleUserProfileContainer } from '@/containers'
 
 const SampleTemplate = () => {
   return (
     <div>
-      <SampleContainer></SampleContainer>
+      <SampleUserProfileContainer />
+      <SampleProductsCategoryContainer />
     </div>
   )
 }
