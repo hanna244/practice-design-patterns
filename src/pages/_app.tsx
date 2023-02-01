@@ -1,13 +1,20 @@
 import React from 'react'
 import '../../styles/globals.css'
 import type { AppProps } from 'next/app'
+import { QueryClient, QueryClientProvider } from 'react-query'
+import { ReactQueryDevtools } from 'react-query/devtools'
 
-function MyApp({ Component, pageProps }: AppProps) {
+const queryClient = new QueryClient()
+
+function T3QApp({ Component, pageProps }: AppProps) {
   return (
     <div>
-      <Component {...pageProps} />
+      <QueryClientProvider client={queryClient}>
+        <ReactQueryDevtools initialIsOpen={false} />
+        <Component {...pageProps} />
+      </QueryClientProvider>
     </div>
   )
 }
 
-export default MyApp
+export default T3QApp
