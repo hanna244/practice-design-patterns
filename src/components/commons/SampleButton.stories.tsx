@@ -8,7 +8,7 @@ export default {
   component: SampleButton,
   // 컴포넌트의 default props를 입력해주세요
   args: {
-    children: '테스트버튼',
+    children: 'Sample Button',
     bgColor: 'white',
   },
 } as ComponentMeta<typeof SampleButton>

@@ -5,11 +5,10 @@ import { SampleUseCategory } from '@/components/presenters'
 import SampleProductsService from '@/services/SampleProductsService'
 
 const SampleUserProfileContainer = () => {
+  // Data fetching
   const { isLoading, data } = useQuery('productsCategoryData', () => {
     return SampleProductsService.categories()
   })
-
-  console.log(data)
 
   if (isLoading) return <p>Loading...</p>
 

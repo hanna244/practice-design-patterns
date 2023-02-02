@@ -1,68 +1,63 @@
 const SampleUserDefaultInfo = {
-  results: [
-    {
-      gender: 'female',
-      name: {
-        title: 'Mrs',
-        first: 'Kelya',
-        last: 'Girard',
-      },
-      location: {
-        street: {
-          number: 2168,
-          name: 'Rue du Cardinal-Gerlier',
-        },
-        city: 'Créteil',
-        state: 'Val-D-Oise',
-        country: 'France',
-        postcode: 51442,
-        coordinates: {
-          latitude: '-17.7245',
-          longitude: '36.6389',
-        },
-        timezone: {
-          offset: '-10:00',
-          description: 'Hawaii',
-        },
-      },
-      email: 'kelya.girard@example.com',
-      login: {
-        uuid: '76613c4e-7ef8-4125-a88f-c0bea3212aa8',
-        username: 'whitepeacock137',
-        password: 'kenwood',
-        salt: '37HgjwzF',
-        md5: '6119a2e3e8e5ed2fbf1c1c93885f1de7',
-        sha1: '275b99e6befc288835d85f9a87e69d1b41ba7d70',
-        sha256: 'dbd20af7e1a30d112d19c6fb9438bee095d14b894c49b36a0c3d78f153f0ec83',
-      },
-      dob: {
-        date: '1985-01-03T01:09:43.938Z',
-        age: 38,
-      },
-      registered: {
-        date: '2020-01-08T22:43:37.446Z',
-        age: 3,
-      },
-      phone: '02-10-16-65-95',
-      cell: '06-51-98-84-04',
-      id: {
-        name: 'INSEE',
-        value: '2850057549148 82',
-      },
-      picture: {
-        large: 'https://randomuser.me/api/portraits/women/61.jpg',
-        medium: 'https://randomuser.me/api/portraits/med/women/61.jpg',
-        thumbnail: 'https://randomuser.me/api/portraits/thumb/women/61.jpg',
-      },
-      nat: 'FR',
-    },
-  ],
-  info: {
-    seed: 'e16c0416e41143ca',
-    results: 1,
-    page: 1,
-    version: '1.4',
+  id: 1,
+  firstName: 'Terry',
+  lastName: 'Medhurst',
+  maidenName: 'Smitham',
+  age: 50,
+  gender: 'male',
+  email: 'atuny0@sohu.com',
+  phone: '+63 791 675 8914',
+  username: 'atuny0',
+  password: '9uQFF1Lh',
+  birthDate: '2000-12-25',
+  image: 'https://robohash.org/hicveldicta.png?size=50x50&set=set1',
+  bloodGroup: 'A−',
+  height: 189,
+  weight: 75.4,
+  eyeColor: 'Green',
+  hair: {
+    color: 'Black',
+    type: 'Strands',
   },
+  domain: 'slashdot.org',
+  ip: '117.29.86.254',
+  address: {
+    address: '1745 T Street Southeast',
+    city: 'Washington',
+    coordinates: {
+      lat: 38.867033,
+      lng: -76.979235,
+    },
+    postalCode: '20020',
+    state: 'DC',
+  },
+  macAddress: '13:69:BA:56:A3:74',
+  university: 'Capitol University',
+  bank: {
+    cardExpire: '06/22',
+    cardNumber: '50380955204220685',
+    cardType: 'maestro',
+    currency: 'Peso',
+    iban: 'NO17 0695 2754 967',
+  },
+  company: {
+    address: {
+      address: '629 Debbie Drive',
+      city: 'Nashville',
+      coordinates: {
+        lat: 36.208114,
+        lng: -86.58621199999999,
+      },
+      postalCode: '37076',
+      state: 'TN',
+    },
+    department: 'Marketing',
+    name: 'Blanda-O',
+    title: 'Help Desk Operator',
+  },
+  ein: '20-9487066',
+  ssn: '661-64-2976',
+  userAgent: 'Mozilla/5.0 ...',
 }
 
 export default SampleUserDefaultInfo

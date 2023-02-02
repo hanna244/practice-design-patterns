@@ -7,7 +7,9 @@ export default {
   title: 'Sample / Component / Commons / SampleCategory',
   component: SampleCategory,
   // 컴포넌트의 default props를 입력해주세요
-  args: {},
+  args: {
+    children: 'Sample Category',
+  },
 } as ComponentMeta<typeof SampleCategory>
 
 /* TEMPLATE ----------------------------------------------------------------- */

@@ -5,6 +5,7 @@ import { useQuery } from 'react-query'
 import SampleUserService from '@/services/SampleUserService'
 
 const SampleUserProfileContainer = () => {
+  // Data fetching
   const { isLoading, data } = useQuery('userInfoProfileData', () => {
     const params = {
       id: 1,
@@ -15,11 +16,7 @@ const SampleUserProfileContainer = () => {
 
   if (isLoading) return <p>Loading...</p>
 
-  return (
-    <div>
-      <SampleUserProfile data={data?.data} />
-    </div>
-  )
+  return <SampleUserProfile data={data?.data} />
 }
 
 export default SampleUserProfileContainer
