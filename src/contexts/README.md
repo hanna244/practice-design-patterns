@@ -1,6 +1,6 @@
 # Contexts
 
-contexts 폴더에는 리액트 컨텍스트들을 보관합니다.
+context 폴더에는 리액트 컨텍스트들을 보관합니다.
 
 ### Naming
 
